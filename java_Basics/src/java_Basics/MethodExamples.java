@@ -26,7 +26,7 @@ public class MethodExamples {
 		int d=scann.nextInt();
 		System.out.println("Enter the First Int:");
 		int e=scann.nextInt();
-		scannerParameters(d, e);
+		scannerParameters(d, e); //method called inside another method
 		scann.close();
 	}
 	public static void main(String[] args) {
