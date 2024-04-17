@@ -3,7 +3,6 @@ package java_Basics;
 public class VariableExampes {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int a;
 		float b;
 		String c;
@@ -11,7 +10,7 @@ public class VariableExampes {
 		boolean e;
 		long f;
 		a=2;
-		b=(float) 2.50;
+		b=(float) 2.5067543258756564543423675856;
 		c="HELLO";
 		d='x';
 		e=true;
@@ -23,7 +22,6 @@ public class VariableExampes {
 		System.out.println(d);
 		System.out.println(e);
 		System.out.println(a*f);
-
 	}
 
 }
