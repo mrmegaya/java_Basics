@@ -5,12 +5,10 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class FileRWExample {
-
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
 		/*FileReader is meant for reading streams of characters. 
 		For reading streams of raw bytes, consider using a FileInputStream.*/
-	    FileReader fileReader = new FileReader("F:\\errorsearch\\reading.txt"); 
+	    FileReader fileReader = new FileReader("src\\reading.txt"); 
 	    /*BufferedReader reads text from a character-input stream, buffering characters 
 	    so as to provide for the efficient reading of characters, arrays, and lines. */
 	    BufferedReader bufferReader = new BufferedReader(fileReader);
@@ -18,10 +16,8 @@ public class FileRWExample {
 	    String textfromfile = null; //
 	    // Using while loop to read the file until there are no more lines
 	    while( (textfromfile = bufferReader.readLine()) != null ){
-	    	if(textfromfile.contains("H")||textfromfile.contains("REF*"))
-	        System.out.println(textfromfile);
-	    	
-	    	
+	    	if(textfromfile.contains("T")||textfromfile.contains("REF*"))
+	        System.out.println(textfromfile);	    	
 	    }
 	    fileReader.close();
 	    // Close the BufferedReader object to prevent memory leak
